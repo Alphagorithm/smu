@@ -42,7 +42,7 @@ int main() {
 	int mul;
 	int col, line;
 
-	while (scanf("%d %d %d", &num, &col, &line) != EOF) {
+	scanf("%d %d %d", &num, &col, &line);
 		len = 1;
 		mul = 1;
 		for (i = 0; i < num; i++)
@@ -51,6 +51,6 @@ int main() {
 			mul *= 2;
 
 		printf("%d\n", z(0, col, line, len, mul));
-	}
+	
 	return 0;
 }
